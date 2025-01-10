@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/images/bg.jpg");
+    height:100vh;
+    width: 100vw;
+   
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+}
+
+.main .box{  
+
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: rgb(13, 12, 12);
+}
+
+nav{
+
+height: 100px;
+max-width: 60vw;
+justify-content: space-between;
+margin: auto;
+display: flex;
+align-items: center;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+    width: 130px;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    
+}
+
+.hero{
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 10px;
+    
+
+}
+
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.hero>  :nth-child(){
+    font-weight: 400;
+    font-size: 30px;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(39, 46, 35);
+    width: 100vw;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color:transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 33px;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+.btn .btn-red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    font-weight: 800;
+    background-color: transparent;
+    height: 30px;
+    width: 250px;
+    
+}
+
+.first{
+    display:flex;
+    justify-content: center;
+    max-width: 50vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+  
+}
+.secImg{
+    position: relative;
+    padding: 25px 25px;
+   
+}
+.secImg img{
+   
+   
+
+    width: 455px;
+    position: relative;
+    z-index: 10;
+}
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+   
+}
+
+section.first>div :nth-child(1){
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2){
+    font-size:18px ;
+    padding-top: 15px;
+}
+
+.faq{
+    background-color: rgb(47, 45, 45);
+    color: white;
+    padding: 30px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 35px;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+
+.faqbox:hover{
+    background-color: rgb(71, 70, 70);
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 15px;
+    max-width: 60vw;
+    margin: 25px auto;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding: 20px;
+}
+
+footer .questions{
+    padding: 15px 0px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+}
+
+.footer-item {
+   display: flex;
+   flex-direction:column ;
+   gap: 10px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+@media  screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+
+    .first{
+        flex-wrap: wrap;
+    }
+
+    .secImg img{
+        width: 305px;
+    }
+
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2){
+        font- size: 18px;
+    }
+
+    .hero> :nth-child(3){
+        font size: 18px;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    footer{
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
